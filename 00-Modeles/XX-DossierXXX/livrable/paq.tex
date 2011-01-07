@@ -1,0 +1,177 @@
+% Plan d'assurance qualité - H4413
+
+\documentclass[twoside]{article}
+\usepackage{hyperref}
+
+
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{placeins}
+
+
+% Unicode encoding  
+\usepackage[utf8]{inputenc}
+
+
+% Colorfull Text
+\usepackage{xcolor}
+
+
+% Language settings:
+\usepackage[french]{babel}
+
+\usepackage[T1]{fontenc}
+
+
+% Tables
+\usepackage{array}
+\usepackage{longtable}
+
+
+% Hyperrefferences  
+\usepackage{hyperref}
+
+
+% Font settings:
+\usepackage{utopia}
+
+
+\title{Plan d'assurance qualité}
+\author{H4413}
+% Page layout settings
+\usepackage{geometry}
+\geometry{
+	a4paper,  % 21 x 29,7 cm
+	body={160mm,240mm},
+	left=30mm, 
+	top=25mm,
+	headheight=7mm, 
+	headsep=4mm,
+	marginparsep=4mm,
+	marginparwidth=27mm
+}
+
+
+% Spacing:
+\usepackage{setspace}
+
+
+% Headers and footers:
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+          \fancyhf{}
+          \fancyfoot[LE,RO]{\textcolor[gray]{0.3}{\thepage}}
+          % Rulers width
+          \renewcommand{\footrulewidth}{.3pt}
+          \renewcommand{\headrulewidth}{.0pt}
+\fancyfoot[LO,RE]{\textcolor[gray]{0.3}{H4413}}
+\fancyfoot[CO,CE]{\textcolor[gray]{0.3}{Plan d'assurance qualité}}
+
+
+% Vars & functs
+\newcommand\PIXPATH{./docs/pics}
+\newcommand\SRCPATH{./docs/src}
+\newcommand\Object{PAQ}
+\renewcommand{\labelitemi}{$\diamond$}
+\renewcommand{\labelenumi}{(\alph{enumi})}
+
+
+% Begining of the document
+\begin{document}
+
+	%Including all the files:
+
+    % Fichier ./docs/tex/0.a.premiere_page.tex
+
+% Front Page 
+
+% Title:
+\maketitle
+
+\thispagestyle{empty}
+
+\hfill\\
+\vfill
+
+% Picture
+
+\begin{center}
+    \includegraphics[width=5cm]{\PIXPATH/frontPage}
+\end{center}
+
+\section*{Objet}
+\Object
+
+    % Fichier ./docs/tex/0.b.suivi.tex
+
+% Suivi du document
+
+% Modifications
+\section*{Modifications du document}
+
+\begin{center}
+\begin{longtable}{|m{14mm}||m{36mm}|m{36mm}|m{60mm}|}
+\hline
+Version & Auteur & Date & Modification\endhead \hline
+% Version
+0
+& % Auteur
+\author
+& % Date
+This a date!
+& % Modification
+Création
+\\\hline
+% Version
+
+& % Auteur
+
+& % Date
+
+& % Modification
+
+\\\hline
+\end{longtable}
+\end{center}
+
+% Validations
+
+\section*{Vérifications et validations du document}
+
+\begin{center}
+\begin{longtable}{|m{15mm}|m{36mm}|m{36mm}|m{60mm}|}
+\hline
+ & Responsable & Date & Remarques\endhead \hline
+% Validé/vérifié par
+
+& % Responsable
+
+& % Date
+
+& % Remarques
+
+\\\hline
+% Validé/vérifié par
+
+& % Responsable
+
+& % Date
+
+& % Remarques
+
+\\\hline
+\end{longtable}
+\end{center}
+
+\pagebreak
+
+    % Fichier ./docs/tex/0.c.toc.tex
+
+% Table of contents 
+\tableofcontents
+\vfill
+\pagebreak
+
+% The end
+\end{document}
+
