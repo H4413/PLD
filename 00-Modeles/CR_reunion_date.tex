@@ -1,2 +1,31 @@
+\documentclass[12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+
+\newcommand{\ordre}[1]{Ordre du jour : \textsc{#1}\\}
+\newcommand{\duree}[1]{Durée de la réunion : \textsc{#1}\\}
+\newcommand{\liste}[1]{Liste de diffusion : \textsc{#1}\\}
+\newcommand{\lieu}[1]{Lieu : \textsc{#1}\\}
 % Réunion en date du : 
 % Doit compiler à partir du simple fichier
+\begin{document}
+\title{Compte-rendu de la réunion}
+\author{Quentin Villers}
+\date{\today}
+\maketitle
+
+\begin{center}
+\duree{1 heure}
+\lieu{D335}
+\liste{H4413}
+\ordre{Première revue}
+\end{center}
+
+\section{Points traités}
+
+\section{Problèmes signalés}
+
+\section{Prochaine réunion}
+La prochaine réunion aura lieu le
+\end{document}
