@@ -1,0 +1,6 @@
+Mettez ici les mots et les définitions dans le glossaire.
+
+Ajoutez le fichier tex si la première lettre du mot n'est pas là.
+
+Exemple : Je veux ajouter Babar, je crée B.tex, j'ouvre ce fichier
+j'ajoute \section{B} et j'entre Babar et ma définition.
