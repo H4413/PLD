@@ -12,7 +12,7 @@ re: clean all
 
 tex:
 	${ECHO} "	*** Generating LaTeX file... ***"
-	sh ./docs/gen.sh
+	bash ./docs/gen.sh
 	${ECHO} "	*** LaTeX file generated. ***"
 
 

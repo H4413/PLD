@@ -86,7 +86,7 @@ echo "
 	top=25mm,
 	headheight=7mm, 
 	headsep=4mm,
-	marginparsep=4mm,
+	marginparsep=3mm,
 	marginparwidth=27mm
 }
 " >> $FILE
