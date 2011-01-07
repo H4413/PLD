@@ -9,27 +9,27 @@ Dossier d'Init + PAQ
 			Methodes, modes operatoires, phasage.
 			Pre-requis (documents, moyens, outils necessaires).
 			Planning des taches; listes des taches par ressources.
-			Organisation de l equipe.
+			Organisation de l'equipe.
 			Plan de charge par ressource.
-			Modalites de suivi d avancement du projet.
+			Modalites de suivi d'avancement du projet.
 			Modalites de validation et de recette.
-			Amendement du plan d assurance qualite.
+			Amendement du plan d'assurance qualite.
 			Plan de gestion des risques
 Dossier d'expression des besoin
 	Etude de l'existant:
-		Rapport intermédiaire de synthèse de 5 pages utiles
+		1 Rapport intermédiaire de synthèse de 5 pages utiles
 	Norme et benchmarck:
-		Rapport intermédiaire de 4 pages utiles
+		1 Rapport intermédiaire de 4 pages utiles
 	Spécification du SI cible:
-		Rapport intermédiaire de modélisation
+		1 Rapport intermédiaire de modélisation
 Dossier des solutions
 	Spécification d'une solution spécifique:
-		Rapport qui présente distinctement les dimensions organisationnelle et informatique de la solution
+		1 Rapport qui présente distinctement les dimensions organisationnelle et informatique de la solution
 	Spécification d'une solution standard
 		Configuration des scénarios SAP sélectionnés(xls)
 		Matrice ARIS Processus Standard/Organigramme GSTP 
 	Modélisation et configuration de la solution ERP:
-		Rapport de modélisation généré par ARIS
+		1 Rapport de modélisation généré par ARIS
 Dossier des choix
 	Evaluation des solutions
 		Dossier de Choix
@@ -46,4 +46,4 @@ Restitution
 				Bilan du suivi des risques.
 				Bilan du suivi de la qualite.
 				Bilan financier.
-				Bilan des contrats
+				
