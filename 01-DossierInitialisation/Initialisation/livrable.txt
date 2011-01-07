@@ -1,4 +1,4 @@
-��Livrable
+Livrables:
 
 Dossier d'Init + PAQ
 	Initialisation du projet
@@ -17,24 +17,24 @@ Dossier d'Init + PAQ
 			Plan de gestion des risques
 Dossier d'expression des besoin
 	Etude de l'existant:
-		Rapport interm�diaire de synth�se de 5 pages utiles
+		Rapport intermédiaire de synthèse de 5 pages utiles
 	Norme et benchmarck:
-		Rapport interm�diaire de 4 pages utiles
-	Sp�cification du SI cible:
-		Rapport interm�diaire de mod�lisation
+		Rapport intermédiaire de 4 pages utiles
+	Spécification du SI cible:
+		Rapport intermédiaire de modélisation
 Dossier des solutions
-	Sp�cification d'une solution sp�cifique:
-		Rapport qui pr�sente distinctement les dimensions organisationnelle et informatique de la solution
-	Sp�cification d'une solution standard
-		Configuration des sc�narios SAP s�lectionn�s(xls)
+	Spécification d'une solution spécifique:
+		Rapport qui présente distinctement les dimensions organisationnelle et informatique de la solution
+	Spécification d'une solution standard
+		Configuration des scénarios SAP sélectionnés(xls)
 		Matrice ARIS Processus Standard/Organigramme GSTP 
-	Mod�lisation et configuration de la solution ERP:
-		Rapport de mod�lisation g�n�r� par ARIS
+	Modélisation et configuration de la solution ERP:
+		Rapport de modélisation généré par ARIS
 Dossier des choix
 	Evaluation des solutions
 		Dossier de Choix
 Restitution
-		Pr�sentation powerpoint
+		Présentation powerpoint
 		Dossier Bilan
 			Documents types
 				Planning general du projet (avec positions debut et fin de phase).
