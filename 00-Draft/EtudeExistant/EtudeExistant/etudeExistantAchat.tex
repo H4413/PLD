@@ -15,15 +15,6 @@
 \begin{document}
 \maketitle
 
-\section{Introduction}
-
-L'étude de l'existant a pour but la réalisation d'un audit au niveau de la
-direction impactée par le projet : la Direction du Matériel. Pour chaque
-département, on synthétisera le fonctionnement en résumant les processus
-majeurs, rappelant les objets métiers et décrivant l'informatique utilisée
-(matériel et logiciel).
-
-
 \section{Département achat}
 
 
@@ -46,31 +37,36 @@ Lorsqu'une demande est acceptée, elle est confiée au département achat et
 la procédure ci-après est suivie :
 
 \begin{enumerate}
+\item Choix d'un fournisseur
+\item Négociation
+\item Formalisation d'un contrat d'achat
+\item Travail de suivi de la commande jusqu'à réception
+\item Réception de commande, contrôle
+\item Si problème ou réserve : retour de la commande au fournisseur ; sinon
+le matériel est intégré au parc
 \end{enumerate}
-
-La DM prend en charge les demandes acceptées : dép achat
-
-CHoix d'un fournisseur,
-Négociation
-Formalisation d'un contrat d'achat
-Travail de suivi de la commande jusqu'à réception
-Réception de commande, contrôle
-Si problème, réserve : retour
-Sinon : la commande est intégrée au parc
 
 
 \subsubsection{Achat de pièces de rechanges}
 
-Déclenchée par le magasinier
-"Automatique" dans la plupart des cas, peut conduire aux phases de l'achat
-de matériel parfois.
+Les achats des diverses pièces de rechange sont déclenchés par le magasinier.
+Ces achats sont différents des achats de matériel : ils font partie du
+fonctionnement normal de l'entreprise, les délais sont très courts et les
+prix ne sont pas comparables à ceux d'achat de matériel.\\
+Dans les cas normaux, les achats de pièce de rechange sont donc
+quasi-automatique ; toutefois, il arrive parfois que le département achat
+suive la procédure appliquée dans le cas d'un achat de matériel, lorsqu'il
+faut commander un nouveau type de pièces de rechanges par exemple.
 
 
 \subsubsection{Achat de prestations}
 
-Principalement location de matériel auprès d'entreprises extérieures car
-matériel indisponible chez nous (peu importe la raison)
-Solution de réactivité, transparente pour le chantier ; augmenter la
+Les prestations sont principalement des locations de matériel auprès d'entreprises extérieures 
+en cas de matériel indisponible au sein de la société GSTP, quelque soit la
+raison.\\
+La location est une solution de réactivité, transparente pour le chantier.
+
+augmenter la
 précision des intervenants si connus
 
 \begin{enumerate}
@@ -79,12 +75,18 @@ précision des intervenants si connus
 \item Soldage de commande
 \end{enumerate}
 
+
 \subsubsection{Gestion des fournisseurs}
 
 Le département achat doit maintenir à jour son catalogue de fournisseur.
 Cela inclut les étapes suivantes :
 \begin{enumerate}
+\item Recherche de fournisseur
+\item Prise de contact
+\item Maintien à jour du catalogue de fournisseur (ajout, suppression et
+modification de fournisseurs)
 \end{enumerate}
+
 
 \subsection{Objets métiers}
 
@@ -122,4 +124,11 @@ Les applications ont été développées en interne.
 
 
 \subsection{Conclusions : +/-}
+
+Les procédures employées par le département Achat sont bien rodées et
+fonctionnent de manière satisfaisante. Toutefois, l'infrastructure
+informatique laisse à désirer ; les logiciels développés en interne sont
+sans doute peu évolutifs et peu ou pas interfacés avec ceux utilisés par la
+Direction du Matériel ou la Direction Générale, par exemple.
+
 \end{document}
