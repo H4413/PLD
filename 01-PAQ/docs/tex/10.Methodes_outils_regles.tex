@@ -10,10 +10,28 @@ Les points suivants des méthodes AGILE sont appliqués:
 \end{itemize}
 
 \subsection{Outils}
-L'équipe utilise Redmine pour la gestion de projet. Git hébergé sur GitHub pour le versionnement et le stockage
-des documents produits. Les documents sont au format Latex.
+L'équipe utilise Redmine pour la gestion de projet.
+\label{outils}
+
+L'outil de versionnement Git est utilisé pour gérer les différentes versions
+des livrables. Notre dépôt est hébergé par \url{www.GitHub.com}.
+
+Les documents sont rédigés avec le langage de composition \LaTeX.
+L'outil Make est utilisé, en coordination avec un script bash, pour générer
+chaque livrable à partir des sources.
+
 \subsection{Règles et normes}
-Les conventions de nommage et de structuration sont précisés dans les chapitres 7 et 8 et sont contrôlés
-par le Responsable Qualité. Les membres de l'équipe sont priés de s'y référer.
-\vfill
-\pagebreak
+
+Un livrable est organisé, sur le serveur, sous forme d'arbre: à la racine
+se trouvent le makefile, un fichier «infos» contenant les informations sur le
+livrable, ainsi que le répertoire «docs» contenant: un script de génération
+du livrable «gen.sh», un répertoire «tex» où sont stockés les fichiers source \LaTeX,
+et un répertoire «pics» pour mettre les images.
+
+Dans le répertoire «tex», on trouve un fichier par partie, nommé de la façon suivante:
+\textsl{XX.nom\_partie.tex} avec \textsl{XX} le numéro de la partie.
+Les noms de fichiers ne doivent contenir ni accents ni espaces, et les fichiers
+sont encodés de préferences en unicode.
+
+Les fichiers commençant par «00» concernent la première page, la gestion de suivi
+et la table des matières.
