@@ -39,6 +39,12 @@ echo "
 \usepackage{xcolor}
 " >> ${FILE}
 
+# €
+echo "
+% \euro
+\usepackage{eurosym}
+" >> ${FILE}
+
 # Language setting
 echo "
 % Language settings:
