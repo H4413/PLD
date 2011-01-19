@@ -1,0 +1,35 @@
+# Insert infos here:
+TITLE="Rapport d'Activités"
+OBJECT="rapport d'activités du projet GSTP"
+AUTHOR="Quentin Villers"
+
+FILE="rapport-activite"
+
+LANG="french"
+# For hyphenation and other language dependant stuff
+
+FONT="default"
+# Fonts (among others): kpfonts, utopia, charter, yfonts, venturis2
+# More info: 	the LaTeX font catalogue:
+# 		http://www.tug.dk/FontCatalogue/
+# default for default font.
+
+# Char encoding (utf-8/latin1)
+CENC="utf-8"
+
+# Document class (article, letter, report)
+DCLASS="article"
+
+# Width of footer/header rules
+FRULE=".3pt"
+HRULE=".0pt"
+
+# Different paths (shouldn't change much...)
+# Documents path
+DOCSPATH=./docs
+# Tex files
+TEXPATH=${DOCSPATH}/tex
+# Pictures files
+PIXPATH=${DOCSPATH}/pics
+# Source code files
+SRCPATH=${DOCSPATH}/src
