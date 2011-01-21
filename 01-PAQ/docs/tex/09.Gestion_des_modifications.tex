@@ -1,12 +1,25 @@
 \section{Gestions des modifications}
 
-Les modifications mineures sont suivies par le versionnement.
+Les modifications mineures sont suivies par le versionnement.\\
 Il est obligatoire de mettre un message
-expliquant les modifications à chaque ajout.
+expliquant les modifications à chaque ajout.\\
 Pour ce faire il faut livrer ses modifications avec la commande
-\verb git commit nomfichier -m"modification fichier nomfichier: ajout XXX"
+\begin{verbatim}
+ git commit nomfichier -m"modification fichier nomfichier: ajout XXX"
+\end{verbatim}
 Lors de modifications importantes (ex: fin de rédaction d'une
 sous-partie), il faut ajouter le nom de l'auteur
 et le nouveau numéro de version au tableau de suivi du document.
 Celui ci se nomme «00.b.1.suivi\_modifications.tex».
 
+
+Le tableau de bord utilise les correspondances suivantes pour quantifier
+l'avancement:
+\begin{description}
+    \item[0\%:]  Pas commencé.
+    \item[20\%:] Démarré.
+    \item[50\%:] En cours, bon avancement.
+    \item[80\%:] Fini, nécessite seulement des petites modifications,
+                    attente de validation.
+    \item[100\%:]Document réputé comme fini.
+\end{description}
