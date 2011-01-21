@@ -132,7 +132,7 @@ echo "
 \newcommand\SRCPATH{$SRCPATH}
 \newcommand\Object{$OBJECT}
 \renewcommand{\labelitemi}{$\diamond$}
-\renewcommand{\labelenumi}{(\alph{enumi})}
+\renewcommand{\labelenumii}{\arabic{enumi}.\arabic{enumii}}
 " >> ${FILE}
 
 # Begining of document
