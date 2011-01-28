@@ -1,0 +1,90 @@
+\section{Département Matériel}
+\subsection{Organisation des services du Dpt Matériel}
+
+
+	\subsubsection{Gestion du Matériel}
+
+	Ce service est composée de 3 personnes. Il se charge de planifier l'affectation du matériel ainsi que les différentes zones de maintenance.\\
+	
+	\subsubsection{Gestion du Parc Matériel}
+	
+	Ce service est composée d'une personne qui s'occupe de la réception du matériel (Demande d'entrée de matériel au parc matériel central), de l'envoi du matériel (Demande de sortie de matériel du parc matériel central), de la gestion d'entrée de matériel(Entrée effective de matériel au garage après acceptation) et de la sortie de Matériel(Sortie effective de matériel du garage après acceptation).
+		
+	\subsubsection{Facturation Matériel}
+	Ce service est composée d'une personne qui a comme fonction principale de facturer correctement un chantier en fonction de la valorisation du matériel et du calcul du coût de la maintenance du matériel (coût de maintenance, coût de pièce de rechange, coût de personnel)\\
+	
+\subsection{Procédures}
+	
+Le département Matériel a 2 Procédures principales, les procédures de facturation et les procédures d'affectation.
+
+\subsubsection{Procédure Facturation}
+	Le processus de Facturation est réalisé par le service Facturation Matériel. La facture (périodicité mensuelle) de matériel est calculée a partir de 
+	la valorisation du matériel et du cout de maintenance:\\
+\begin {enumerate}
+	\item La valorisation du Matériel
+		Calculé a partir de \\
+		\begin{itemize}
+			\item Pointage d'utilisation du Materiel\\
+			\item Avis valorisation Frais de Structure génère par la gestion des matériels	\\
+		\end{itemize}	
+	\item Coût de maintenance
+		Le calcul du cout de la maintenance est déterminée à partir de:\\
+		\begin{itemize}
+			\item Avis Valorisation Personnes: c'est le Coût de la main d'ouvre  consomme par le matériel\\
+			\item Avis Valorisation Pieces de Rechange et pneus: Dépense en piece de rechange et pneus \\
+		\end{itemize}
+
+\end{enumerate}
+
+source : GSTP/Ressources/Modele-de-l-existant/MCT-Facturer-chantier.doc
+
+\hfill\\
+\hfill\\
+\subsection{Procédure Affectation du matériel}
+
+	Pour planifier l'affectation du matériel on distingue :\\
+	\begin{itemize}
+		\item L'affectation d'utilisation de matériel qui est faite en fonction des demandes des chantier pour le matériel.\\
+		\item La demande de location de matériel, faites si aucun matériel est disponible pour satisfaire une demande. C'est le service de location qui fait la gestion de location.\\
+		\item L'autorisation d'approvisionnement, validée à partir d'un calcul de besoin en fonctions de variation des stocks.\\
+		\item La maintenance préventive du matériel effectuée après un certain temps d'utilisation.\\
+	\end{itemize}
+\hfill\\
+
+source : GSTP/Ressources/Modele-de-l-existant/MCT-Planification.doc
+
+
+\subsection{Liste des objets métiers}
+\begin{itemize}
+	\item Facture\\
+	\item Chantier\\
+	\item Fournisseur\\
+	\item livraison\\
+	\item Affectation\\
+	\item Matériel\\
+	\item Piece Rechange\\
+\end{itemize}
+
+
+\subsection{Système d'Information}
+\begin{enumerate}
+
+\item  \textbf{Materiel}\\
+
+Le departement de Materiel dispose de 3 pcs (pour lancer l'application de facturation et de planning), qui sont reliés au serveur de l'entreprise et 2 Imprimantes nécessaires pour imprimer les factures de chaque chantier\\
+
+\item  \textbf{Logiciel}\\
+
+Le département Matériel utilise une application de facturation, et l'application de gestion de planning( pour les materiel)\\
+\end{enumerate}
+
+\subsection{Dysfonctionnements}
+
+
+Non efficacité de Planification des affectations: lors d'une demande, il faut regarder si le materiel est disponible quelque part ou s'il sera disponible bientôt(2 ou 3 jours), pour ne pas louer ou d'acheter de matériel et faire du stock pas necessaire.
+
+La demande de chantiers est faite sans délai d'avance: il faut un minimun de temps à l'avance pour trouver en stock disponible le matériel, sinon il y a le risque de faire des dépenses inutiles.
+
+Disponibilité de matériel n'est pas souvent à jour: Il faut savoir à tout moment le date envoi et retour
+
+Livraison pas directement sur le chantier
