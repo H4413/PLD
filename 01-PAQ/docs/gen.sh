@@ -136,7 +136,7 @@ echo "
 \newcommand\Object{$OBJECT}
 
 % End of line(forced):
-\newcommand\el{\hfill\\}
+\newcommand\el{\hfill\\\}
 
 % Lists design:
 \renewcommand{\labelitemi}{$\diamond$}
