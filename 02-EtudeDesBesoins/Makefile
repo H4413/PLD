@@ -10,7 +10,13 @@ all: pdf
 
 re: clean all
 
-dvi:
+tex:
+	${ECHO} "	*** Generating LaTeX file... ***"
+	bash ./docs/gen.sh
+	${ECHO} "	*** LaTeX file generated. ***"
+
+
+dvi: tex 
 	${ECHO} "	*** Generating dvi file... ***"
 	${LATEX} *.tex
 	if test -e *.toc;\
@@ -18,7 +24,7 @@ dvi:
 	fi
 	${ECHO} "	*** dvi file generated. ***"
 
-pdf:
+pdf: tex 
 	${ECHO} "	*** Generating pdf file... ***"
 	${PDF} *.tex
 	if test -e *.toc;\
@@ -38,6 +44,6 @@ cleanall: clean
 
 clean:
 	${ECHO} "	*** Cleaning all... ***"
-	${RM} *.{aux,log,toc,out,pyg,glo,ist}
+	${RM} *.{tex,aux,log,toc,out,pyg}
 	${ECHO} "	*** Done. ***"
 
