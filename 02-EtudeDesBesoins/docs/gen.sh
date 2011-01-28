@@ -26,7 +26,7 @@ if [ $CENC == "utf-8" ]
 then
     echo "
 % Unicode encoding  
-\usepackage[utf8]{inputenc}
+\usepackage[utf8x]{inputenc}
 " >> ${FILE}
     BADENC="latin1"
 else
@@ -128,9 +128,17 @@ echo "
 # (Re)define stuff
 echo "
 % Vars & functs
+% Paths
 \newcommand\PIXPATH{$PIXPATH}
 \newcommand\SRCPATH{$SRCPATH}
+
+% Object:
 \newcommand\Object{$OBJECT}
+
+% End of line(forced):
+\newcommand\el{\hfill\\\}
+
+% Lists design:
 \renewcommand{\labelitemi}{$\diamond$}
 \renewcommand{\labelenumii}{\arabic{enumi}.\arabic{enumii}}
 " >> ${FILE}
