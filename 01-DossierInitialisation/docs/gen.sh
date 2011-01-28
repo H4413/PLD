@@ -128,9 +128,17 @@ echo "
 # (Re)define stuff
 echo "
 % Vars & functs
+% Paths
 \newcommand\PIXPATH{$PIXPATH}
 \newcommand\SRCPATH{$SRCPATH}
+
+% Object:
 \newcommand\Object{$OBJECT}
+
+% End of line(forced):
+\newcommand{\el}{\\hfill\\}
+
+% Lists design:
 \renewcommand{\labelitemi}{$\diamond$}
 \renewcommand{\labelenumii}{\arabic{enumi}.\arabic{enumii}}
 " >> ${FILE}

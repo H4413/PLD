@@ -39,6 +39,12 @@ echo "
 \usepackage{xcolor}
 " >> ${FILE}
 
+# €
+echo "
+% \euro
+\usepackage{eurosym}
+" >> ${FILE}
+
 # Language setting
 echo "
 % Language settings:
@@ -122,11 +128,19 @@ echo "
 # (Re)define stuff
 echo "
 % Vars & functs
+% Paths
 \newcommand\PIXPATH{$PIXPATH}
 \newcommand\SRCPATH{$SRCPATH}
+
+% Object:
 \newcommand\Object{$OBJECT}
+
+% End of line(forced):
+\newcommand{\el}{\\hfill\\}
+
+% Lists design:
 \renewcommand{\labelitemi}{$\diamond$}
-\renewcommand{\labelenumi}{(\alph{enumi})}
+\renewcommand{\labelenumii}{\arabic{enumi}.\arabic{enumii}}
 " >> ${FILE}
 
 # Begining of document
