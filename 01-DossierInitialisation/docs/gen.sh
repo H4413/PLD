@@ -26,7 +26,7 @@ if [ $CENC == "utf-8" ]
 then
     echo "
 % Unicode encoding  
-\usepackage[utf8]{inputenc}
+\usepackage[utf8x]{inputenc}
 " >> ${FILE}
     BADENC="latin1"
 else
