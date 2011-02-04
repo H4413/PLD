@@ -1,0 +1,18 @@
+Processus de la commande de pièce de rechange
+
+Le reponsable de chaque atelier fais une demande de pièce de rechange au magasin le plus proche que sera délivré qu'une fois par semaine.
+La livraison est faite par "zone de chantier", c'est-à-dire, un camion est responsable pour desservir plusieurs ateliers que sont proches entre eux (30 km, par exemple). Cela réduit les coûts de livraison.
+Si une demande est urgente, elle peut être délivré le plus rapidement possible sans attendre les commandes des ateliers voisins.
+
+Ateliers:
+1. Commande de pièce de rechange réalisé par un responsable atelier
+
+Magasin:
+1. Si le magasin ne possède pas les pièces nécessaires
+1.1	Commande des pièces
+
+2. Si la commande est urgente
+2.1	Livraison directe
+   Sinon
+2.2	Attend les commandes de tous les ateliers de la meme zone
+2.3	Livraison par zone une fois par semaine
