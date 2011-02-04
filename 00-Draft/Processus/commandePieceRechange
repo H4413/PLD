@@ -9,10 +9,12 @@ Ateliers:
 
 Magasin:
 1. Si le magasin ne possède pas les pièces nécessaires
-1.1	Commande des pièces
+1.1	Commande des pièces à un fournisseur
 
 2. Si la commande est urgente
-2.1	Livraison directe
+2.1	Imprimession d'un avis de livraison (document utilisé pour confirmé la livraison)
+2.2	Livraison directe par camion
    Sinon
-2.2	Attend les commandes de tous les ateliers de la meme zone
-2.3	Livraison par zone une fois par semaine
+2.3	Attente des commandes de tous les ateliers de la meme zone
+2.4	Impression des avis de livraison
+2.5	Livraison par zone une fois par semaine
