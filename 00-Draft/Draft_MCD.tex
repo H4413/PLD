@@ -1,0 +1,49 @@
+% Doit compiler à partir de ce simple fichier
+% Mettre NOM et DATE et FICHIER RELATIF
+\title{Modification du modèle conceptuel de données}
+\author{Hugo PASTORE DE CRISTOFARO}
+\date{02/02/2011}
+
+\documentclass[a4paper]{article}
+
+\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+
+\usepackage[utf8x]{inputenc}
+\usepackage[french]{babel}
+
+\begin{document}
+\maketitle
+
+%\section{Introduction}
+
+
+%Si le RQ est motivé il peut en faire un tableau....
+
+\section{Ajout d'une classe Commande Standard}
+
+La classe commade standard (STD_CMD) représente des listes de pièces de 
+rechange standard à commander à chaque début de chantier en fonction de son type.
+
+\subsubsection{Description de l'entité}
+
+
+
+\begin{description}
+    \item[CODE-LISTE] Idenifiant de la liste, TYPE : INT, LG : 10
+    \item[NOM-LISTE] Nom de la liste de pièces, TYPE : STRING
+    \item[DESC-LISTE] Description de la liste, TYPE : STRING
+\end{description}
+
+\subsubsection{Relations et cardinalité}
+
+\begin{description}
+    \item[COMM/LISTE] COMMANDE : Commande d'une liste standard (1,N)\el
+        STD_CMD : liste standard (0,N)
+    \item[LISTE/PR] STD_CMD : Liste des pièces de rechange (0,N)\el
+        PIECE-RECHANGE :  Pièce de rechange.(O,N)
+\end{description}
+
+
+\subsection{}
+
+\end{document}
