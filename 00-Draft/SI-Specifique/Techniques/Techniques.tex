@@ -1,11 +1,15 @@
-%!TEX encoding = UTF-8 Unicode
-\documentclass [a4paper] {report}
-\usepackage[utf8]{inputenc}
-\usepackage[francais]{babel}
+\documentclass[a4paper]{article}
+
+\usepackage[utf8x]{inputenc}
+\usepackage[french]{babel}
+
+\title{Annotation du MCT - DRAFT}
+\author{Cgg, Victor}
+\date{6 février}
+
 \usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
-\usepackage{hyperref}
-\usepackage{eurosym}
-\begin {document}
+
+\begin{document}
 
 \section{Architecture Technique}
 L'amélioration du système d’information de l'entreprise passe tout d'abord par une augmentation du nombre de postes
@@ -13,17 +17,18 @@ informatiques. Toutes les informations passeront par le système informatique et
 
 \subsection{Schéma}
 
- \begin{figure}[!h]
-    \begin{center}
-    \includegraphics[width=4cm]{\PIXPATH/Schema}
-    \caption{}
-    \end{center}
-    \end{figure}
+ %\begin{figure}[!h]
+  %  \begin{center}
+   % \includegraphics[width=4cm]{\PIXPATH/Schema}
+    %\caption{}
+    %\end{center}
+    %\end{figure}
 
 
 \subsection{Serveur}
 
 Le serveur sera externalisé et il servira de support pour la base de données et la gestion des accès à ces données. 
+
 Chaque application, et donc chaque poste, sera configurée pour se connecter à la base de données du serveur. 
 Toutes partageront les mêmes informations et il sera ainsi possible de facilement faire le rapprochement entre 
 les achats et le matériel réceptionné par exemple.
@@ -56,10 +61,12 @@ Nous savons que les chantiers
  sont souvent amenés à se déplacer dans le cadre de leur travail, donc le réseau 3G est indispensable 
 pour qu'ils puissent être plus réactif vis-à-vis de leur activité, comme par exemple, répondre 
 instantanément à un email, rechercher une information, ou échanger et communiquer sur une messagerie. 
+
 Chaque poste disposera d’une clé 3G pour se connecter au réseau GSM haut débit.
 
 Il existe une large choix de formules proposées par les différents opérateurs de téléphones portables, 
 pour citer quelques unes:
+
 Forfait journée: connexion n'importe quand durant tout la journée
 Prix: 2 à 12 \euro
 
@@ -90,7 +97,11 @@ contre les coups.
 		\item 2,8 Kg
 	\end{enumerate}
 
+<<<<<<< HEAD
+Prix: 499 euros
+=======
 Prix: 499 \euro
+>>>>>>> 4d73a8319c46aeaa83eba980769ed70fed51b57d
 
 
 
