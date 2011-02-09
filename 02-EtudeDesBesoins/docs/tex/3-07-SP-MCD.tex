@@ -1,0 +1,28 @@
+\subsection{Modèle Conceptuel de Données}
+
+\subsubsection{Introduction}
+Le MCD est disponible dans le fichier Gstp-mcd.doc.
+Peu de modifications du MCD, simple ajout d'une classe commande standard.
+
+%Si le RQ est motivé il peut en faire un tableau....
+
+\subsubsection{Ajout d'une classe Commande Standard}
+
+La classe commande standard (STD\_CMD) représente des listes de pièces de 
+rechange standard à commander à chaque début de chantier en fonction de son type.
+
+\par{Description de l'entité}
+\begin{description}
+    \item[CODE-LISTE] Identifiant de la liste, TYPE : INT, LG : 10
+    \item[NOM-LISTE] Nom de la liste de pièces, TYPE : STRING
+    \item[DESC-LISTE] Description de la liste, TYPE : STRING
+\end{description}
+
+\par{Relations et cardinalité}
+\begin{description}
+    \item[COMM/LISTE] COMMANDE : Commande d'une liste standard (1,N)\el
+        STD\_CMD : liste standard (0,N)
+    \item[LISTE/PR] STD\_CMD : Liste des pièces de rechange (0,N)\el
+        PIECE-RECHANGE :  Pièce de rechange.(O,N)
+\end{description}
+
