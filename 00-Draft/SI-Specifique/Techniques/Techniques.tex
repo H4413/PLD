@@ -1,0 +1,80 @@
+%!TEX encoding = UTF-8 Unicode
+\documentclass [a4paper] {report}
+\usepackage[utf8]{inputenc}
+\usepackage[francais]{babel}
+\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+\usepackage{hyperref}
+\usepackage{eurosym}
+\begin {document}
+
+\section{Architecture Technique}
+L’amélioration du système d’information de l’entreprise passe tout d’abord par une augmentation du nombre de postes informatiques. Toust les informations passerant par le systeme informatique et seront enregistrées.
+
+\subsection{Schema}
+
+ \begin{figure}[!h]
+    \begin{center}
+    \includegraphics[width=4cm]{\PIXPATH/Schema}
+    \caption{}
+    \end{center}
+    \end{figure}
+
+
+\subsection{Serveur}
+
+Le serveur sera externalise et il servira de support pour la base de données et la gestion des accès à ces données. Chaque application, et donc chaque poste, sera configurée pour se connecter à la base de données du serveur. Toutes partageront les mêmes informations et il sera ainsi possible de facilement faire le rapprochement entre les achats et le matériel réceptionné par exemple.
+
+	\subsubsection{Architecture}
+Nous avons besoin d'un serveur d'application qui hébergera les applications pour le chantier, le magasin, et les differents departements,  ainsi qu'une base de données pour les information concernants aux chantiers, magasin, fourniseurs, etc. 
+
+Pour établir la communication Client-Serveur on utilisera le protocole LDAP. Il fournit à l'utilisateur des commandes pour se connecter ou se déconnecter,  pour rechercher, comparer, créer, modifier ou effacer des entrées. Des mécanismes de chiffrement (SSL ou TLS) et d'authentification (SASL), couplés à des mécanismes de règles d'accès (ACL) permettent de protéger les transactions et l'accès aux données.
+
+	\subsubsection{Hebergement}
+    Il nous faut un ensemble de serveurs capables de répondre à un grand
+    nombre de requêtes, et ce en permanence.
+
+Une solution consiste à héberger nos serveurs dans le \textsl{cloud}, on utilisera le modele IAAS pour  que l'entreprise maintient ses applications, les rutimes, l'intégration SOA, les bases de données, le logiciel serveur.
+Cette solution nous permettant ainsi de payer uniquement les ressources que nous consommons, tout en bénéficiant d'une bonne résilience aux pannes et d'une bonne disponibilité.
+L'entreprise GoGrid fournit un tel service, à partir de 60 euros par mois.
+
+
+\subsection{Communication}
+Le departement Achat, Materiel et Maintenance doivent etre en reseau locale pour qu'ils puissent  communiquer entre elles.
+
+Sur les chantiers, il faut pouvoir relier les ordinateurs au siège par l’intermédiaire d’internet. Nous savons que les chantiers sont souvent amenés à se déplacer dans le cadre de leur travail, donc le réseau 3G est indispensable pour qu'ils puissent être plus réactif vis-à-vis de leur activité, comme par exemple, répondre instantanément à un email, rechercher une information, ou échanger et communiquer sur une messagerie. Chaque poste disposera d’une clé 3G pour se connecter au réseau GSM haut-débit.
+
+Il existe une largue choix de formules proposées par les differents opérateurs de téléphones portable, pour citer quelques unes:
+Forfait Journée: Connection n'importe quand durant tout la journée
+Prix: 2 à 12€
+
+Forfait Mois illimités: Navigation par nombre d'heures illimitées.
+Prix: de 30€ à 70€
+
+
+   
+
+\subsection{Chantiers}
+On ajoutera 30 PCs avec des caracteristiques qui correspondent au milieu de travail ( des ordinateurs resistentes au pression, vibration, humidité, etc. 1 pour chaque chantier), ces ordinateurs n'ont pas besoin d’être très puissantes, seulemet ils doivent se connecter à internet et être capable de faire fonctionner l’application de chantier.
+
+Exemple:
+DELL ATG D620: Pc Portable qui resiste l'humidité, l'altitude, pression, et vibration, protégé 
+contre les coups.
+	
+	Caracteristiques:
+
+	\begin{enumerate}
+		\item 14,1 puces
+		\item lumineux
+		\item sans reflet
+		\item RAM 4 Go, Core 2 Duo T7600
+		\item 80 Go, 4200 T/M Anti-choc
+		\item Windows Vista
+		\item 2,8 Kg
+	\end{enumerate}
+
+Prix: 499€
+
+
+
+
+\end{document}
