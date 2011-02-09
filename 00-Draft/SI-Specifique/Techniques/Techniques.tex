@@ -24,14 +24,18 @@ informatiques. Toust les informations passerant par le systeme informatique et s
 \subsection{Serveur}
 
 Le serveur sera externalise et il servira de support pour la base de données et la gestion des accès à ces données. 
-Chaque application, et donc chaque poste, sera configurée pour se connecter à la base de données du serveur. Toutes partageront les mêmes informations et il sera ainsi possible de facilement faire le rapprochement entre les achats et le matériel réceptionné par exemple.
+Chaque application, et donc chaque poste, sera configurée pour se connecter à la base de données du serveur. 
+Toutes partageront les mêmes informations et il sera ainsi possible de facilement faire le rapprochement entre 
+les achats et le matériel réceptionné par exemple.
 
 	\subsubsection{Architecture}
 Nous avons besoin d'un serveur d'application qui hébergera les applications pour le chantier, le magasin, et les differents 
 departements,  ainsi qu'une base de données pour les information concernants aux chantiers, magasin, fourniseurs, etc. 
 
 Pour établir la communication Client-Serveur on utilisera le protocole LDAP. Il fournit à l'utilisateur des commandes 
-pour se connecter ou se déconnecter,  pour rechercher, comparer, créer, modifier ou effacer des entrées. Des mécanismes de chiffrement (SSL ou TLS) et d'authentification (SASL), couplés à des mécanismes de règles d'accès (ACL) permettent de protéger les transactions et l'accès aux données.
+pour se connecter ou se déconnecter,  pour rechercher, comparer, créer, modifier ou effacer des entrées. 
+Des mécanismes de chiffrement (SSL ou TLS) et d'authentification (SASL), couplés à des mécanismes de règles d'accès (ACL) 
+permettent de protéger les transactions et l'accès aux données.
 
 	\subsubsection{Hebergement}
     Il nous faut un ensemble de serveurs capables de répondre à un grand
@@ -39,7 +43,8 @@ pour se connecter ou se déconnecter,  pour rechercher, comparer, créer, modifi
 
 Une solution consiste à héberger nos serveurs dans le \textsl{cloud}, on utilisera le modele IAAS pour  que l'entreprise 
 maintient ses applications, les rutimes, l'intégration SOA, les bases de données, le logiciel serveur.
-Cette solution nous permettant ainsi de payer uniquement les ressources que nous consommons, tout en bénéficiant d'une bonne résilience aux pannes et d'une bonne disponibilité.
+Cette solution nous permettant ainsi de payer uniquement les ressources que nous consommons, tout en bénéficiant 
+d'une bonne résilience aux pannes et d'une bonne disponibilité.
 L'entreprise GoGrid fournit un tel service, à partir de 60 euros par mois.
 
 
@@ -47,8 +52,10 @@ L'entreprise GoGrid fournit un tel service, à partir de 60 euros par mois.
 Le departement Achat, Materiel et Maintenance doivent etre en reseau locale pour qu'ils puissent  communiquer entre elles.
 
 Sur les chantiers, il faut pouvoir relier les ordinateurs au siège par l’intermédiaire d’internet. Nous savons que les chantiers
- sont souvent amenés à se déplacer dans le cadre de leur travail, donc le réseau 3G est indispensable pour qu'ils puissent être plus réactif vis-à-vis de leur activité, comme par exemple, répondre 
-instantanément à un email, rechercher une information, ou échanger et communiquer sur une messagerie. Chaque poste disposera d’une clé 3G pour se connecter au réseau GSM haut-débit.
+ sont souvent amenés à se déplacer dans le cadre de leur travail, donc le réseau 3G est indispensable 
+pour qu'ils puissent être plus réactif vis-à-vis de leur activité, comme par exemple, répondre 
+instantanément à un email, rechercher une information, ou échanger et communiquer sur une messagerie. 
+Chaque poste disposera d’une clé 3G pour se connecter au réseau GSM haut-débit.
 
 Il existe une largue choix de formules proposées par les differents opérateurs de téléphones portable, pour citer quelques unes:
 Forfait Journée: Connection n'importe quand durant tout la journée
