@@ -31,33 +31,42 @@ Il faut se plaindre auprès de \textbf{Victor} :-P.
 
 \subsection{Commande de pièces de rechange}
 
-Le reponsable de chaque atelier fais une demande de pièce de rechange au
+Le responsable de chaque atelier fais une demande de pièce de rechange au
 magasin le plus proche que sera délivré qu'une fois par semaine.  La
 livraison est faite par "zone chantier", c'est-à-dire, un camion est
 responsable pour desservir plusieurs ateliers que sont proches entre eux
 (30 km, par exemple). Cela réduit les coûts de livraison.
-Si une demande est urgente, elle peut être délivré le plus rapidement
+Si une demande est urgente, elle peut être délivrée le plus rapidement
 possible sans attendre les commandes des ateliers voisins.
 
 Ateliers:
-1. Commande de pièce de rechange réalisé par un responsable atelier
+\begin{enumerate}
+    \item Commande de pièce de rechange réalisée par un responsable atelier
+\end{enumerate}
 
 Magasin:
-1. Si le magasin ne possède pas les pièces nécessaires
-1.1	Commande des pièces à un fournisseur
+\begin{enumerate}
+    \item Si le magasin ne possède pas les pièces nécessaires
+    \begin{enumerate}
+        \item Commande des pièces à un fournisseur
+    \end{enumerate}
 
-2. Si la commande est urgente
-2.1	Impression d'un avis de livraison (document utilisé pour confirmé la livraison)
-2.2	Livraison directe par camion
-   Sinon
-2.3	Attente des commandes de tous les ateliers de la meme zone
-2.4	Impression des avis de livraison
-2.5	Livraison par zone une fois par semaine
+    \item Si la commande est urgente
+    \begin{enumerate}
+        \itemImpression d'un avis de livraison
+        (document utilisé pour confirmé la livraison)
+        \item Livraison directe par camion
+        Sinon
+        \item Attente des commandes de tous les ateliers de la même zone
+        \item Impression des avis de livraison
+        \item Livraison par zone une fois par semaine
+    \end{enumerate}
+\end{enumerate}
 
-A chaque fin de travaux dans un chantier ou à chaque nouveau chantier les
-"zones chantiers" sont mises à jour. Un calcul est fais à partir des
+À chaque fin de travaux dans un chantier ou à chaque nouveau chantier les
+«zones chantiers» sont mises à jour. Un calcul est fait à partir des
 distances entre les ateliers pour créer des zones où les chantiers sont
-distants entre eux en moyenne par 30 km.
+distants entre eux en moyenne de 30 km.
 
 
 \subsection{Gestion des demandes de matériel}
@@ -65,10 +74,10 @@ distants entre eux en moyenne par 30 km.
 %Dis que l'on garde le même processus, mais que l'on va numériser
 %Précise les transferts entre chantiers
 
-Le processus actuel est satisfaisant, et va donc etre conserve. Il sera
-toutefois numerise, et formalisera les transferts de materiels entre
-chantiers proches, a la fin d'un chantier et si le materiel ne necessite
-pas de maintenance lourde (effectuee au siege).
+Le processus actuel est satisfaisant, et va donc être conservé. Il sera
+toutefois numérisé, et formalisera les transferts de matériels entre
+chantiers proches, à la fin d'un chantier et si le matériel ne nécessite
+pas de maintenance lourde (effectuée au siège).
 
 
 \subsection{Maintenance}
@@ -80,7 +89,7 @@ Le processus actuel est satisfaisant.
 Le diagramme ne précise pas les différents intervenants ; on rappelle que :
 \begin{itemize}
 \item Chaque chef de chantier réalise avant le début du chantier un premier
-planning d'utilisation de matériel
+planning d'utilisation de matériel;
 \item Ce planning est transmis à la Direction du Matériel qui peut tenir à
 jour un planning global et si nécessaire lancer des investissements (achat
 de gros matériel).
@@ -90,7 +99,7 @@ de gros matériel).
 
 De plus, le MCT ne fait pas apparaître un point qui nous semble essentiel :
 la correction du planning une fois le chantier lancé. Le chef de chantier
-devrait ré-évaluer son planning d'utilisation de matériel au cours du
+devrait réévaluer son planning d'utilisation de matériel au cours du
 chantier, à raison d'une fois par mois. De cette manière, on sera à même de
 mieux gérer l'utilisation du matériel et sa maintenance (si un matériel est
 libéré plus tôt que prévu par exemple).
@@ -98,10 +107,10 @@ libéré plus tôt que prévu par exemple).
 
 \subsection{Facturer les chantiers}
 
-Il processus actuel est satisfaisant, cepedant il manque un point essentiel,
-la reactivité. \\
+Il processus actuel est satisfaisant, cependant il manque un point essentiel,
+la réactivité. \\
 Il faudrait pouvoir gérer ou accéder aux informations de facturations en 
-temps réel, plutôt que d’attendre l’édition de la facture au début du 
+temps réel, plutôt que d’attendre l'édition de la facture au début du 
 mois suivant.
 
 
