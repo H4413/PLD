@@ -1,0 +1,68 @@
+% Doit compiler à partir de ce simple fichier
+% Mettre NOM et DATE et FICHIER RELATIF
+
+\usepackage[utf8x]{inputenc}
+
+% Insérez ici le titre de votre draft, votre nom et la date de rédaction.
+\title{}
+\author{}
+\date{}
+
+\documentclass[a4paper]{article}
+
+\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+
+\usepackage[french]{babel}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+% Dans cette section, donnez des instructions concernant l'utilisation du
+% draft : livrable dans lequel il s'inclut, état d'avancement (pas fini,
+% presque fini, fini, fini-on-n-y-touche-plus), et toute autre info que
+% vous jugeriez utile sur le moment (inutile d'inclure la température
+% extérieure toutefois).
+\end{abstract}
+
+\section{Introduction}
+
+\section{Liste des scenarios SAP correspondant au besoin}
+
+Module Services Industries.
+
+Service Maintenance : \\
+
+\begin{itemize}
+    \item \textbf{Simples}
+    \item Réparation en atelier simplifiée. (275)
+    \item Gestion de la maintenance et des garanties (274)
+    \item Maintenance interne (193)
+    \item \textbf{Complexes}
+    \item Réparation en atelier (217)
+    \item Gestion des réclamations et des retours (C38)
+\end{itemize}
+
+Service Matériel : \\
+
+\begin{itemize}
+    \item \textbf{Complexes}    
+    \item Service avec prix fixe (200)
+    \item Saisie des temps (211)
+    \item Approvisionnement Matériel de remplacement (276)
+    \item Reporting Interactif (CR2)
+\end{itemize}
+
+Service Achat : \\
+
+\begin{itemize}
+    \item Comptabilité fournisseurs (158)
+    \item Grand Livre (156)
+\end{itemize}
+
+On en conclue qu'on doit considérer le chantier comme un client pour utiliser 
+SAP.
+
+\subsection{}
+
+\end{document}
