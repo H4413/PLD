@@ -5,8 +5,9 @@
 \usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
 \usepackage{hyperref}
 \usepackage{eurosym}
+
 \begin {document}
-
+
 \section{Applications}
 
 Liste des Fonctions par Applications:
@@ -38,8 +39,16 @@ un ou plusieurs critères)
 
 \item Application Maintenance
 \begin{itemize}
-\item Récupération de l'ensemble des demandes de maintenance du matériel
+\item Récupération de l'ensemble des demandes de maintenance exceptionnelle des matériels
 \item Etablir le planning pour la maintenance du matériel
+\item Editer le journal de maintenance pour chaque matériel :
+    \begin{itemize}
+    \item Modification d'une fiche de maintenance
+    \item Pas de création/suppression car la fiche de maintenance est liée
+    au matériel auquel elle se réfère. La fiche de maintenance est donc
+    créée puis supprimée automatiquement en même temps que le matériel dans
+    la base.
+    \end{itemize}
 \end{itemize}
 
 \item Application Chantier
