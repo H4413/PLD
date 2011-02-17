@@ -1,6 +1,6 @@
 %!TEX encoding = UTF-8 Unicode
 \documentclass [a4paper] {report}
-\usepackage[utf8]{inputenc}
+\usepackage[utf8x]{inputenc}
 \usepackage[francais]{babel}
 \usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
 \usepackage{hyperref}
@@ -14,14 +14,21 @@ On présente ici la liste des fonctions de chaque application composant le
 SI spécifique conçu pour GSTP.
 
 
+\subsection{Fonctions globales}
+
+L'ensemble des applications utilise une fonctionnalité de login, permettant
+de restreindre l'accès à certains types d'utilisateurs.
+
+
 \subsection{Application Achats}
-% Suivre commande
 % Communication avec la comptabilité pour les commandes
-% Suivre le budget
+% Cette fonctionnalité est incluse dans les fonctions de commande, non ?
 
 \begin{itemize}
 \item Commander du matériel
 \item Commander des pièces de rechanger
+\item Suivre une commande
+\item Suivre le budget
 \item Consulter le catalogue de fournisseurs (recherche de fournisseurs selon 
 un ou plusieurs critères)
 \item Editer le catalogue de fournisseurs :
@@ -34,58 +41,88 @@ un ou plusieurs critères)
 
 \subsection{Application Matériel}
 % Valorisation du Parc
+% => Ça veut dire quoi ? Ce n'est pas une fonction, mais un objectif ?
 \begin{itemize}
-\item Récupération des plannings prévisionnels d'utilisation de matériels des chantiers
-\item Etablir le planning effectif d'affectation des matériels pour les chantiers
+\item Récupération des plannings prévisionnels d'utilisation de matériels
+des chantiers
+\item Etablir le planning effectif d'affectation des
+matériels pour les chantiers
 \item Calculer et transmettre les factures qui correspondent à chaque chantier
 à partir de l'utilisation des matériels
 \item Enregistrer les mouvements de matériels (entrées et sorties du parc)
 \end{itemize}
 
+
 \subsection{Application Maintenance}
-% Saisie des temps des ouvriers qui font la maintenance
-% Gestion du catalogue de maintenance (changer une roue il faut 3h...)
-% Planification de l'affectation des ouvriers à la maintenance
-% Etablir le planning journalier
 % Anticiper les planifications curatives
+\subsubsection{Opérations de maintenance}
 \begin{itemize}
-\item Récupération de l'ensemble des demandes de maintenance exceptionnelle des matériels
-\item Etablir le planning pour la maintenance du matériel
-\item Editer le journal de maintenance pour chaque matériel :
+\item Récupération de l'ensemble des demandes de maintenance exceptionnelle
+des matériels
+\item Etablir le planning pour la maintenance du matériel, prenant en
+compte les maintenances préventives et curatives :
     \begin{itemize}
-    \item Modification d'une fiche de maintenance % A préciser
+    \item planning global
+    \item planning journalier
+    \end{itemize}
+\item Editer le catalogue et le  journal de maintenance pour chaque matériel :
+    \begin{itemize}
+    \item Consultation du catalogue de maintenance associé à une classe de 
+    matériel
+    \item Modification d'une fiche de maintenance associée à un matériel
+     % A préciser
     \item Pas de création/suppression car la fiche de maintenance est liée
     au matériel auquel elle se réfère. La fiche de maintenance est donc
     créée puis supprimée automatiquement en même temps que le matériel dans
     la base.
     \end{itemize}
-
-%Gestion du magasin
-% Ensemble des fonctionnalités pour gérer un magasin
-% Gestion des entrées/sorties (des PR...) (Gestion des livraisons)
-% Gestion des Stocks
-% Gestion des Commandes de PR et des livraisons
-% Groupement des commandes des chantiers
-% Outils pour suivre la livraison
-
 \end{itemize}
+
+\subsubsection{Gestion du magasin de pièces de rechange}
+\begin{itemize}
+\item Fonctions de gestion d'un magasin :
+    \begin{itemize}
+    \item Suivre les entrées/sorties de pièces de rechanges
+    \item Consultation du stock de pièces de rechange
+    \end{itemize}
+\item Traitement des commandes de pièces de rechange des chantiers :
+    \begin{itemize}
+    \item Enregistrement des commandes
+    \item Optimisation de l'expédition hebdomadaire des commandes
+    \item Suivi de la livraison 
+    \end{itemize}
+\item Commander des pièces de rechange auprès du Département Achat
+\end{itemize}
+
+\subsubsection{Gestion des techniciens de maintenance}
+\begin{itemize}
+\item Planification des affectations des techniciens de maintenance
+\item Saisie des temps de travail des techniciens de maintenance
+\end{itemize}
+
 
 \subsection{Application Chantier}
-% Suivre son budget
-% Application Chantier pourra être plus global, c'est les fonctions adaptées aux
-% départements maintenance
-% Saisie mensuel du temps prévue d'utilisation
-% Saisie hebdomadaire du temps
-% Commande des PR
+L'application chantier reprend de nombreuses fonctionnalités de
+l'application maintenance, adaptée et restreintes pour convenir à l'usage
+d'un chantier.
+
+\subsubsection{Fonctions transverses}
 \begin{itemize}
-\item Prévision d'utilisation réelle du matériel
-\item Saisie des heures de travail du personnel
-\item Affichage de prochaines livraisons
-\item Affichage l'état des factures en cours
+\item Suivi du budget
 \end{itemize}
 
-%Toutes les applications disposeront des fonctionnalités suivantes : 
-% - Authentification
-% ...
+\subsubsection{Matériel}
+\begin{itemize}
+\item Saisie du temps d'utilisation (hebdomaire)
+\item Saisie de la prévision d'utilisation réelle du matériel (mensuelle)
+\item Commander des pièces de rechange
+\item Effectuer une demande de maintenance exceptionelle
+\end{itemize}
+
+\subsubsection{Personnel}
+\begin{itemize}
+\item Saisie du temps de travail des ouvriers
+\item Planification des tâches assignées aux ouvriers
+\end{itemize}
 
 \end{document}
