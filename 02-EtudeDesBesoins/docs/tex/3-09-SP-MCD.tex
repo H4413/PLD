@@ -20,9 +20,11 @@ rechange standard à commander à chaque début de chantier en fonction de son t
 
 \par{Relations et cardinalité}
 \begin{description}
-    \item[COMM/LISTE] COMMANDE : Commande d'une liste standard (1,N)\el
+    \item[COMM/LISTE]\el
+         COMMANDE : Commande d'une liste standard (1,N)\el
         STD\_CMD : liste standard (0,N)
-    \item[LISTE/PR] STD\_CMD : Liste des pièces de rechange (0,N)\el
+    \item[LISTE/PR]\el
+         STD\_CMD : Liste des pièces de rechange (0,N)\el
         PIECE-RECHANGE :  Pièce de rechange.(0,N)
 \end{description}
 
@@ -35,10 +37,17 @@ d'utilisation.
 \begin{description}
     \item[CODE-DEMANDE] Identifiant de la commande, TYPE :INT, LG : 10
     \item[DESC-DEMANDE] Description de la demande, TYPE : STRING 
+    \item[DATE-DEB]     Date début demande
+    \item[DATE-FIN]     Date fin demande
 \end{description}
 
 \par{Relations et cardinalité}
 \begin{description}
-    \item[]
+    \item[PLAN/CHANTIER]\el
+        PLAN\_CHANTIER: planification d'un matériel pour un chantier (1,1)\el
+        CHANTIER: chantier (0,N)
+    \item[PLAN/MAT]\el
+        PLAN\_CHANTIER: planification d'un matériel pour un chantier (0,1)\el
+        CHANTIER: chantier (0,N)
 \end{description}
 
