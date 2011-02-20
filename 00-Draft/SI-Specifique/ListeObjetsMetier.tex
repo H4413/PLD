@@ -1,18 +1,22 @@
 % Doit compiler à partir de ce simple fichier
 % Mettre NOM et DATE et FICHIER RELATIF
 
-\usepackage[utf8x]{inputenc}
 
 % Insérez ici le titre de votre draft, votre nom et la date de rédaction.
+
+\documentclass[a4paper]{article}
+
+\usepackage[utf8x]{inputenc}
+
 \title{PLD - SI Spécifique\\Liste des objets métier à développer}
 \author{Cgg\\Karen}
 \date{18 février 2011}
 
-\documentclass[a4paper]{article}
-
 \usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
 
 \usepackage[french]{babel}
+
+\usepackage{slashbox}
 
 \begin{document}
 \maketitle
@@ -25,12 +29,66 @@ un (liés à la planification).
 
 \section{Liste des objets métiers à développer}
 
-\subsection{Application Achats}
+La liste des objets métiers est présentée sous la forme d'un tableau à deux
+entrées. De cette façon, on peut plus facilement voir quels sont les objets
+métiers réutilisés plusieurs fois par différentes application.\\
 
-\subsection{Application Matériel}
-
-\subsection{Application Maintenance}
-
-\subsection{Application Chantier}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\backslashbox{Listes Objets Métiers}{Applications}&Achats& Matériel&Maintenance&Chantier\\
+\hline
+Affectation&&x&&x\\
+\hline
+Atelier&&x&x&\\
+\hline
+Chantier&&x&x&\\
+\hline
+Commande&x&x&x&x\\
+\hline
+Facture&&x&&x\\
+\hline
+Fonction&&&x&\\
+\hline
+Catalogue fournisseurs&x&&&\\
+\hline
+Fournisseur&x&&&\\
+\hline
+Gamme Maintenance&&&x&\\
+\hline
+Livraison&x&&&\\
+\hline
+Matériel&&x&x&x\\
+\hline
+Opération Maintenance&&&x&x\\
+\hline
+Période&&x&x&x\\
+\hline
+Piece Rechange&x&&x&x\\
+\hline
+Planification d'affectation&&x&x&x\\
+\hline
+Planification de maintenance&&x&x&\\
+\hline
+Poste Fonctionnel&x&x&x&x\\
+\hline
+Prestation&x&&&\\
+\hline
+Produit Acheté&x&&&\\
+\hline
+Regroupement de produits&&x&&\\
+\hline
+Type de matériel&&x&&\\
+\hline
+Type d'opération de maintenance&&&x&\\
+\hline
+Type de période&x&x&x&x\\
+\hline
+Type de prestation&x&&&\\
+\hline
+Type de regroupement de produit&&x&&\\
+\hline
+\end{tabular}
+\end{center}
 
 \end{document}
