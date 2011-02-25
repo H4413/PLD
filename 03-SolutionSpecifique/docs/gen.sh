@@ -12,6 +12,8 @@ echo "% $TITLE - $AUTHOR" > $FILE
 echo "
 \documentclass[twoside]{$DCLASS}
 \usepackage{hyperref}
+\usepackage{eurosym}
+\usepackage{slashbox}
 " >> $FILE
 
 # To include pictures
