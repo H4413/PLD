@@ -1,0 +1,587 @@
+% Plan d'assurance qualité - H4413
+
+\documentclass[twoside]{article}
+\usepackage{hyperref}
+
+
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{placeins}
+
+
+% Unicode encoding  
+\usepackage[utf8x]{inputenc}
+
+
+% Colorfull Text
+\usepackage{xcolor}
+
+
+% \euro
+\usepackage{eurosym}
+
+
+% Language settings:
+\usepackage[french]{babel}
+
+\usepackage[T1]{fontenc}
+
+
+% Tables
+\usepackage{array}
+\usepackage{longtable}
+
+
+% Hyperrefferences  
+\usepackage{hyperref}
+
+
+\title{Plan d'assurance qualité}
+\author{H4413}
+% Page layout settings
+\usepackage{geometry}
+\geometry{
+	a4paper,  % 21 x 29,7 cm
+	body={160mm,240mm},
+	left=30mm, 
+	top=25mm,
+	headheight=7mm, 
+	headsep=4mm,
+	marginparsep=4mm,
+	marginparwidth=27mm
+}
+
+
+% Spacing:
+\usepackage{setspace}
+
+
+% Headers and footers:
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+          \fancyhf{}
+          \fancyfoot[LE,RO]{\textcolor[gray]{0.3}{\thepage}}
+          % Rulers width
+          \renewcommand{\footrulewidth}{.3pt}
+          \renewcommand{\headrulewidth}{.0pt}
+\fancyfoot[LO,RE]{\textcolor[gray]{0.3}{H4413}}
+\fancyfoot[CO,CE]{\textcolor[gray]{0.3}{Plan d'assurance qualité}}
+
+
+% Vars & functs
+% Paths
+\newcommand\PIXPATH{./docs/pics}
+\newcommand\SRCPATH{./docs/src}
+
+% Object:
+\newcommand\Object{PAQ}
+
+% End of line(forced):
+\newcommand\el{\hfill\\}
+
+% Lists design:
+\renewcommand{\labelitemi}{$\diamond$}
+\renewcommand{\labelenumii}{\arabic{enumi}.\arabic{enumii}}
+
+
+% Begining of the document
+\begin{document}
+
+	%Including all the files:
+
+    % Fichier ./docs/tex/00.a.premiere_page.tex
+
+% Front Page 
+
+% Title:
+\maketitle
+
+\thispagestyle{empty}
+
+\hfill\\
+\vfill
+
+% Picture
+
+\begin{center}
+    \includegraphics[width=5cm]{\PIXPATH/frontPage}
+\end{center}
+
+\section*{Objet}
+\Object
+
+    % Fichier ./docs/tex/00.b.1.suivi_modifications.tex
+
+% Suivi du document
+
+% Modifications
+\section*{Modifications du document}
+
+\begin{center}
+\begin{longtable}{|m{14mm}|m{36mm}|m{36mm}|m{60mm}|}
+\hline
+Version & Auteur & Date & Modification\endhead \hline
+% Version
+0
+& % Auteur
+Raphaël Lizé
+& % Date
+7 janvier 2011
+& % Modification
+Création
+\\\hline
+% Version
+0.1
+& % Auteur
+Hugo PASTORE DE CRISTOFARO
+& % Date
+16 janvier 2011
+& % Modification
+Relecture et complétion
+\\\hline
+% Version
+0.2
+& % Auteur
+Raphaël Lizé
+& % Date
+16 janvier 2011
+& % Modification
+Relecture et complétion
+\\\hline
+% Version
+1
+& % Auteur
+Raphaël Lizé
+& % Date
+17 janvier 2011
+& % Modification
+Complétion après vérification
+\\\hline
+% Version
+1.1
+& % Auteur
+Raphaël Lizé
+& % Date
+20 janvier 2011
+& % Modification
+Modifications mineures
+\\\hline
+% Version
+1.2
+& % Auteur
+Raphaël Lizé
+& % Date
+21 janvier 2011
+& % Modification
+Ajout signification \% de progression
+\\\hline
+% Version
+2
+& % Auteur
+Raphaël Lizé
+& % Date
+21 janvier
+& % Modification
+Dernières modifications
+\\\hline
+% Version
+
+& % Auteur
+
+& % Date
+
+& % Modification
+
+\\\hline
+\end{longtable}
+\end{center}
+
+
+    % Fichier ./docs/tex/00.b.2.suivi_veva.tex
+
+% Suivi du document
+% Validations
+
+\section*{Vérifications et validations du document}
+
+\begin{center}
+\begin{longtable}{|m{15mm}|m{36mm}|m{36mm}|m{60mm}|}
+\hline
+ & Responsable & Date & Remarques\endhead \hline
+% Validé/vérifié par
+Vérifié
+& % Responsable
+Quentin Villers
+& % Date
+17 janvier 2011
+& % Remarques
+à  étoffer
+\\\hline
+% Validé/vérifié par
+Validé
+& % Responsable
+Quentin Villers
+& % Date
+21 janvier 2011
+& % Remarques
+
+\\\hline
+% Validé/vérifié par
+
+& % Responsable
+
+& % Date
+
+& % Remarques
+
+\\\hline
+\end{longtable}
+\end{center}
+
+\pagebreak
+
+    % Fichier ./docs/tex/00.c.toc.tex
+
+% Table of contents 
+\tableofcontents
+\vfill
+\pagebreak
+
+    % Fichier ./docs/tex/01.preliminaires.tex
+
+% Préliminaires
+
+%\section{Préliminaires}
+%    \subsection{Cadre du PAQP}
+
+%    \subsection{Logiciels concernés par le PAQP}
+
+%    \subsection{Responsabilités associées au PAQP}
+
+%    \subsection{Procédure d'évolution du PAQP}
+
+%    \subsection{Procédure à  suivre en cas de non-application du PAQP}
+%\pagebreak
+
+    % Fichier ./docs/tex/02.introduction.tex
+
+% Introduction
+\section{Introduction}
+Ce document précise les dispositions relatives à la qualité pour l'ensemble du projet.
+%\pagebreak
+
+    % Fichier ./docs/tex/03.documents_de_ref.tex
+
+% Documents de référence et applicables
+
+\section{Documents de référence et applicables}
+    
+    \subsection{Documents de référence}
+\begin{itemize}
+   \item Dictionnaire de la langue française
+   \item Livrables fournis par le client
+   \item Polycopiés R. Aubry
+\end{itemize}
+
+    \subsection{Documents applicables}
+        Plan d'Assurance Qualité.
+
+    % Fichier ./docs/tex/04.terminologies.tex
+
+% Terminologie et applications
+
+%\section{Terminologie et applications}
+%Application
+
+%\vfill
+%\pagebreak
+
+    % Fichier ./docs/tex/05.organisation_humaine_comite_pilotage.tex
+
+% Organisation humaine du comité de pilotage du projet
+
+\section{Organisation humaine du comité de pilotage du projet}
+
+Le comité de pilotage du projet est organisé de la façon suivante:
+
+    \subsection{Rôle des différents intervenants}
+\begin{description}
+\item[Chef de projet:]M. Quentin Villers
+\item[Responsable qualité:]M. Raphaël Lizé
+\item[Responsable communication:]M. Hugo Pastore
+\item[Experts métiers:]Mlle Karen Abento, MM. Clément Geiger et Victor Borges
+\end{description}
+
+    \subsection{Relations entre les intervenants}
+\begin{description}
+\item[Clients:]MM. Youssef Amghar, Mohamed Ouhalima et Pierre-Alain Millet,
+Mme Anne Legait.
+\end{description}
+
+    \subsection{Planning des séances et règles}
+Les séances sont organisées et animées par le chef de projet et se
+déroulent de cette façon:
+\begin{enumerate}
+\item initialisation de la séance, 15 minutes:
+    \begin{itemize}
+        \item retours,
+        \item objectifs du jour,
+        \item assignation des tâches;
+    \end{itemize}
+\item revue éventuelle;
+\item travail sur le projet;
+\item clôture.
+\end{enumerate}
+
+Les collaborateurs suivront ces règles:
+\begin{itemize}
+\item être ponctuel,
+\item entretenir des relations professionnelles les uns envers les
+        autres en envers les clients.
+\item Les entreprises s'engagent à répondre sous un jour ouvré pour 
+        permettre aux équipes d'analyser le plus fidèlement possible
+        le travail des intervenants.
+\item Tenir les collaborateurs au courant de l'avancée du travail.
+\item Répondre aux mails sous 1 jour ouvré.
+\end{itemize}
+
+    % Fichier ./docs/tex/06.qualite_niveau_processus.tex
+
+% Qualité au niveau du processus
+
+%\section{Qualité au niveau du processus}
+%
+%    \subsection{Présentation de la démarche de développement au niveau Projet}
+%
+%        \subsubsection{Généralités}
+%
+%        \subsubsection{Phase d’étude préalable}
+%
+%        \subsubsection{Phase d’étude détaillée}
+%
+%        \subsubsection{Phase d’intégration système}
+%
+%        \subsubsection{Phase de validation système}
+%
+%        \subsubsection{Phase de mise en \oe{}uvre sur site pilote}
+%
+%    \subsection{Règles de qualité pour l’ingénierie concurrente}
+%
+%        \subsubsection{Règles sur la rédaction d’un cahier des charges d’un sous-projet}
+%
+%        \subsubsection{Règles sur la définition précise des résultats attendus pour chaque sous-projets}
+%
+%        \subsubsection{Règles sur le suivi qualité des sous-projets}
+%
+%        \subsubsection{Règles sur la définition de critères d’acceptation des sous-projets avant intégration}
+%
+%    \subsection{Présentation des démarche de développement au niveau sous-projets}
+%
+%        \subsubsection{Liste des processus de développement susceptibles d’être retenus pour le
+%            développement des sous-projets}
+%
+%        \subsubsection{Description du cycle de développement n\degre 1}
+%
+%            \par{Liste des étapes}
+%
+%            \par{Étape numéro 1}
+%
+%            \begin{description}
+%                \item[Documents en entrée]
+%                \item[Documents en sortie]
+%                \item[Conditions de validation de l'étape%]
+%            \end{description}
+%
+%            \par{Suivi de projet}
+%\pagebreak
+
+    % Fichier ./docs/tex/07.Documentation.tex
+
+%\section{Documentation}
+%
+%\subsection{Structuration de la documentation}
+%La documentation est strucuturée par livrable. Le dossier de
+%documentation est placé sur un dépôt versionné.
+%Chaque livrable est identifié par un numéro et est contenu dans 
+%un dossier nommé de la manière suivante : XX.nom\_livrable.
+%
+%
+% \subsection{Liste des documents de gestion de projet}
+%
+%
+%\subsection{Liste des documents relatifs à la qualité}
+%
+%\begin{itemize}
+%    \item Plan d'Assurance Qualité (ce document)
+%\end{itemize}
+%
+%\subsection{Manuels d'utilisation et de mise en \oe{}uvre}
+
+
+
+    % Fichier ./docs/tex/08.Gestion_de_configuration.tex
+
+\section{Gestion de configuration}
+
+\subsection{Conventions d'identification}
+Les livrables possèdent des tableaux, en début de document, permettant
+de tracer son historique: qui a modifié le document, quand, avec un
+commentaire; qui a relu/validé le livrable, quand, avec un commentaire.
+
+\subsubsection{Responsabilités}
+Chacun est responsable de ses entrées dans les tableaux: les rédacteurs
+pour le tableau des versions, le responsable qualité et le chef de projet
+pour le tableau de validation.
+
+Le responsable qualité vérifie ces entrées.
+
+\subsubsection{Procédures de gestion de la configuration}
+La gestion de configuration se fait avec l'outil \textsl{Git} (cf. \ref{outils}).
+
+%Lorsqu'un collaborateur veut effectuer une 
+
+\subsection{Gestion des ressources partagées}
+Toutes les ressources sont déposées sur le dépôt de versionnement.
+
+L'outil \textsl{ARIS} est utilisé avec un compte partagé.
+
+    % Fichier ./docs/tex/09.Gestion_des_modifications.tex
+
+\section{Gestions des modifications}
+
+Les modifications mineures sont suivies par le versionnement.\\
+Il est obligatoire de mettre un message
+expliquant les modifications à chaque ajout.\\
+Pour ce faire il faut livrer ses modifications avec la commande
+\begin{verbatim}
+ git commit nomfichier -m"modification fichier nomfichier: ajout XXX"
+\end{verbatim}
+Lors de modifications importantes (ex: fin de rédaction d'une
+sous-partie), il faut ajouter le nom de l'auteur
+et le nouveau numéro de version au tableau de suivi du document.
+Celui ci se nomme «00.b.1.suivi\_modifications.tex».
+
+
+Le tableau de bord utilise les correspondances suivantes pour quantifier
+l'avancement:
+\begin{description}
+    \item[0\%:]  Pas commencé.
+    \item[20\%:] Démarré.
+    \item[50\%:] En cours, bon avancement.
+    \item[70\%:] Candidat à la validation. 
+    \item[80\%:] Fini, nécessite seulement des petites modifications,
+                    relu mais non validé.
+    \item[90\%:] Candidat à la vérification RQ. 
+    \item[100\%:]Document réputé comme fini.
+\end{description}
+
+    % Fichier ./docs/tex/10.Methodes_outils_regles.tex
+
+\section{Méthodes, Outils et Règles}
+
+\subsection{Méthodes}
+Les points suivants des méthodes AGILE sont appliqués:
+\begin{itemize}
+\item Réunions en début de séance
+\item Réunions d'avancement en fin de séance
+\item Suivi de projet en ligne (Redmine)
+\item Travail collaboratif lors des séances
+\end{itemize}
+
+\subsection{Outils}
+L'équipe utilise Redmine pour la gestion de projet.
+\label{outils}
+
+L'outil de versionnement Git est utilisé pour gérer les différentes versions
+des livrables. Notre dépôt est hébergé par \url{www.GitHub.com}.
+
+Les documents sont rédigés avec le langage de composition \LaTeX.
+L'outil Make est utilisé, en coordination avec un script bash, pour générer
+chaque livrable à partir des sources.
+
+L'avancement du projet peut être suivi via un document partagé hébergé
+sur le service \url{docs.google.com}.
+
+La modélisation sera réalisée avec le logiciel \textsl{ARIS}.
+
+\subsection{Règles et normes}
+
+Un livrable est organisé, sur le serveur, sous forme d'arbre: à la racine
+se trouvent le makefile, un fichier «infos» contenant les informations sur le
+livrable, ainsi que le répertoire «docs» contenant: un script de génération
+du livrable «gen.sh», un répertoire «tex» où sont stockés les fichiers source \LaTeX,
+et un répertoire «pics» pour mettre les images.
+
+Dans le répertoire «tex», on trouve un fichier par partie, nommé de la façon suivante:
+\textsl{XX.nom\_partie.tex} avec \textsl{XX} le numéro de la partie.
+Les noms de fichiers ne doivent contenir ni accents ni espaces, et les fichiers
+sont encodés de préferences en unicode.
+
+Les fichiers commençant par «00» concernent la première page, la gestion de suivi
+et la table des matières.
+
+    % Fichier ./docs/tex/11.Controle_des_fournisseurs.tex
+
+%\section{Contrôle des Fournisseurs}
+%
+%\subsection{Exigences vis-à-vis des sous-traitants}
+%Les sous-traitants sont tenus d'appliquer toutes les règles de ce plan d'assurance qualité.
+%Ils peuvent créer leur propre plan d'assurance qualité qui doit strictement hériter du document présent.
+%\subsection{Logiciels achetés, loués ou imposés}
+%L'utilisation de Latex est la seule contrainte logicielle imposée aux sous-traitants.
+%\vfill
+%\pagebreak
+
+    % Fichier ./docs/tex/12.Reproduction_protection_livraison.tex
+
+\section{Reproduction, Protection, Livraison}
+
+\subsection{Précautions à prendre lors de la reproduction}
+Toute reproduction ne doit se faire que pour une copie locale d'un document.
+
+\subsubsection{Protection des données contre les incidents}
+Les données sont versionnées par Git. Le serveur GitHub garde des copies de toutes les versions précédentes.
+A partir du moment où les données ont été mises en ligne, il est toujours possible de les récupérer.
+C'est pourquoi il est conseillé de partager le travail régulièrement.
+
+\subsection{Modalités de livraison}
+Les livraisons se font sur moodle par le chef de projet.
+Il est interdit à quelconque membre de l'équipe de livrer un document sans
+validation du contenu par le chef de projet et de la forme par le resposable
+quélité. 
+
+\subsubsection{Délais}
+Les délais sont inhérents aux conditions imposées par le client. Les délais imposés par le
+planning du chef de projet en héritent et sont les dates butoires réelles à respecter. 
+
+
+    % Fichier ./docs/tex/13.Suivi_application_PQ.tex
+
+\section{Suivi de l'application du Plan Qualité}
+
+\subsection{Principes}
+Un outil de gestion de projet est mis en place. Il s'agit d'un Redmine.
+La validation de la qualité se fait par ce biais.
+
+\subsection{Interventions du responsable qualité sur la démarche de développement}
+Le responsable qualité vérifie la forme de tous les livrables. Il vérifie aussi l'utilisation des outils mis en place
+et l'application des méthodes choisies.
+
+Le responsable qualité participe aussi à la gestion des risques sur le projet.
+
+\subsection{Modalités de réception des résultats des sous-projets avant intégration}
+Le Responsable Qualité valide les livrables indépendamment avant tout rendu.
+
+\vfill
+\pagebreak
+
+    % Fichier ./docs/tex/14.Conclusion.tex
+
+%\section{Conclusion}
+
+%\vfill
+%\pagebreak
+
+% The end
+\end{document}
+
