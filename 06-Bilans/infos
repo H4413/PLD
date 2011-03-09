@@ -3,7 +3,7 @@ TITLE="Bilans personnels"
 OBJECT="Bilans personnels des membres de l'hexanome."
 AUTHOR="H4413"
 
-FILE="si_spec"
+FILE="bilans"
 
 LANG="french"
 # For hyphenation and other language dependant stuff
