@@ -1,6 +1,6 @@
 # Insert infos here:
-TITLE=""
-OBJECT=""
+TITLE="Dossier de choix"
+OBJECT="Ce livrable reprend les choix effectués."
 AUTHOR="H4413"
 
 FILE="si_spec"
