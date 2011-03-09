@@ -3,7 +3,7 @@ TITLE="Dossier de choix"
 OBJECT="Ce livrable reprend les choix effectués."
 AUTHOR="H4413"
 
-FILE="si_spec"
+FILE="dossier_choix"
 
 LANG="french"
 # For hyphenation and other language dependant stuff
