@@ -139,7 +139,7 @@ echo "
 \newcommand\el{\hfill\\\}
 
 % Lists design:
-\renewcommand{\labelitemi}{$\diamond$}
+\renewcommand{\labelitemii}{$\diamond$}
 \renewcommand{\labelenumii}{\arabic{enumi}.\arabic{enumii}}
 " >> ${FILE}
 

@@ -139,16 +139,16 @@ echo "
 
 % End of line(forced):
 \newcommand\el{\hfill\\\}
-
-% Lists design:
-\renewcommand{\labelitemi}{$\diamond$}
-\renewcommand{\labelenumii}{\arabic{enumi}.\arabic{enumii}}
 " >> ${FILE}
 
 # Begining of document
 echo "
 % Begining of the document
 \begin{document}
+
+% Lists design:
+\renewcommand\labelitemi{\textbullet}
+\renewcommand{\labelenumii}{\arabic{enumi}.\arabic{enumii}}
 " >> ${FILE}
 
 # Main part
