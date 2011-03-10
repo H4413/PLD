@@ -1,9 +1,9 @@
 # Insert infos here:
-TITLE="Bilans personnels"
-OBJECT="Bilans personnels des membres de l'hexanome."
+TITLE="Solution Standard"
+OBJECT="Description de la solution SAP"
 AUTHOR="H4413"
 
-FILE="bilans"
+FILE="Solution_standard"
 
 LANG="french"
 # For hyphenation and other language dependant stuff

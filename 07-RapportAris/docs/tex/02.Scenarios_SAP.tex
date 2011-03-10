@@ -1,0 +1,67 @@
+\section{Liste des scenarios SAP correspondant au besoin}
+Ci-dessous, une liste des scénarios montrant un rapprochement avec les 
+besoins de chaque service.
+
+
+\begin{itemize}
+\item \textbf{Service Maintenance :} \\
+
+    \begin{itemize}
+        \item \textbf{Simples}
+        \item Réparation en atelier simplifiée. (275)
+        \item Gestion de la maintenance et des garanties (274)
+        \item Maintenance interne (193)
+        \item \textbf{Complexes}
+        \item Réparation en atelier (217)
+        \item Gestion des réclamations et des retours (C38)
+    \end{itemize}
+
+\item \textbf{Service Matériel : }\\
+
+    \begin{itemize}
+        \item Gestion des équipements(444)
+        \item \textbf{Complexes}    
+        \item Service avec prix fixe (200)
+        \item Saisie des temps (211)
+        \item Approvisionnement Matériel de remplacement (276)
+        \item Reporting Interactif (CR2)
+    \end{itemize}
+
+\item \textbf{Service Achat :} \\
+
+    \begin{itemize}
+        \item Comptabilité fournisseurs (158)
+        \item Grand Livre (156)
+        \item Commande Pièce(R48) (dans package ECO)
+    \end{itemize}
+
+On en conclue qu'on doit considérer le chantier comme un client pour utiliser 
+SAP.
+
+\subsection{Choix}
+Le scénario Saisie des temps(211) est utilisé par le service maintenance et le 
+service matériel.
+\\
+Pour la maintenance, on utilise le scénario de réparation simplifié en 
+Atelier(275) qui couvre la partie intervention.
+La planification et le diagnostic sont couverts par Gestion de la maintenance et 
+des garanties(274).
+\\
+Pour le service matériel, on utilise le processus Gestion de Equipements (444) 
+qui couvre l'ensemble des besoins de ce service.
+\\
+Pour le service Achat, on utilise le scénario Commande Pièce (R48). 
+
+\subsection{Trous fonctionnels}
+
+La gestion des livraisons mutualisées n'est pas gérée.
+
+Le transfert de matériel n'est pas directement géré par SAP mais peut être 
+assimilé à une utilisation non prévue d'un scénario SAP.
+
+On devra donc prévoir des développements spécifiques pour ces deux processus.
+
+% trouver d'autres fonctions non couvertes Réalité = rien n'est couvert et on
+% est mauvais et on aura pas la moyenne et on aura pas notre diplôme et on 
+% ira pas en échange et on va être renvoyés et on va aller à Lyon 1 ou à l'istil
+% avec mohammed
