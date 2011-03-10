@@ -147,7 +147,7 @@ echo "
 \begin{document}
 
 % Lists design:
-\renewcommand\labelitemi{\textbullet}
+\renewcommand\labelitemii{$\diamond$}
 \renewcommand{\labelenumii}{\arabic{enumi}.\arabic{enumii}}
 " >> ${FILE}
 
